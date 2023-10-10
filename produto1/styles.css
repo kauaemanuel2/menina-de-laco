@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* Estilos para a página do carrinho de compras */
 @import url('https://fonts.cdnfonts.com/css/castillem');
 @import url('https://fonts.cdnfonts.com/css/lt-bump-smrd');
 
@@ -143,4 +143,59 @@ footer {
         width: 45%;
         margin: 10px;
     }
+}
+
+.carrinho {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrinho h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.item-carrinho {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.item-carrinho img {
+    max-width: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.item-carrinho h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.item-carrinho p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.item-carrinho .preco {
+    font-size: 18px;
+    color: #e44d26; /* Cor laranja para o preço */
+    margin-top: 10px;
+}
+
+.item-carrinho .remover-do-carrinho {
+    background-color: var(--cor4);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.item-carrinho .remover-do-carrinho:hover {
+    background-color: #d14021; /* Cor ligeiramente mais escura ao passar o mouse */
 }
