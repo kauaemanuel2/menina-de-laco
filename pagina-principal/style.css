@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* Reset de estilos para garantir uma base consistente */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9ded3;
+}
+
+header {
+    background-color: #fdd1b6;
+    color: rgb(252, 86, 113);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(253, 46, 167);
+    font-weight: bold;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9ded3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto {
+        display: inline-block;
+        margin: 20px;
+        padding: 10px;
+        background-color: #fab4b6;
+        border: 1px solid #ddd;
+        text-align: center;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+    
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produto h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgb(20, 20, 177);
+}
+
+.produto p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.produto .preco {
+    font-size: 18px;
+    color: #e44d26; /* Cor laranja para o preço */
+}
+
+.produto .adicionar-ao-carrinho {
+    background-color: #e44d26;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto .adicionar-ao-carrinho:hover {
+    background-color: #d14021; /* Cor ligeiramente mais escura ao passar o mouse */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para telas menores (responsivo) */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+    }
+    header h1 {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+    nav ul {
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    main {
+        padding: 10px;
+    }
+    .produto {
+        width: 45%;
+        margin: 10px;
+    }
+}
