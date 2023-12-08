@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url('https://fonts.cdnfonts.com/css/castillem');
+@import url('https://fonts.cdnfonts.com/css/lt-bump-smrd');
+
+body {
+    font-family: 'LT Bump SmRd', sans-serif;
+    background-color: #e1b7ed;
+    margin: 0;
+}
+
+header {
+    background-color: #e1b7ed;
+    color: #e04891;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    padding: 15px 0;
+    font-family: 'Castillem', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(253, 46, 167);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f93c79;
+    background-color: rgba(243, 60, 121, 0.486);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fab4b6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    text-align: center;
+    margin: 20px;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produto h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #e04891;
+}
+
+.produto .preco {
+    font-size: 18px;
+    color: #4c1b05;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
