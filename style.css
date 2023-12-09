@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/castillem');
 @import url('https://fonts.cdnfonts.com/css/lt-bump-smrd');
 
-/* Reset de estilos para garantir uma base consistente */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@
     --fonte-padrao: 'LT Bump SmRd', sans-serif;
     --fonte-titulos:'Castillem', sans-serif;
 }
-/* Estilos gerais */
+
 body {
     font-family: var(--fonte-padrao);
     background-color: var(--cor6);
@@ -95,7 +95,7 @@ main {
 
 .produto .preco {
     font-size: 18px;
-    color: var(--cor5); /* Cor laranja para o preço */
+    color: var(--cor5); 
 }
 
 .produto .adicionar-ao-carrinho {
@@ -109,7 +109,7 @@ main {
 }
 
 .produto .adicionar-ao-carrinho:hover {
-    background-color: #8dc4b2fa; /* Cor ligeiramente mais escura ao passar o mouse */
+    background-color: #8dc4b2fa; 
 }
 
 footer {
@@ -123,28 +123,35 @@ a{
     color: rgb(255, 0, 140);
 }
 
-/* Estilos para telas menores (responsivo) */
+
 @media (max-width: 768px) {
     header {
-        text-align: left;
+        text-align: center; 
     }
     header h1 {
         font-size: 40px;
-        margin-left: 20px;
+        margin-left: 0; 
     }
     nav ul {
-        text-align: left;
-        margin-left: 20px;
+        text-align: center; 
+        margin-left: 0;
         margin-top: 10px;
     }
     nav ul li {
-        margin-right: 10px;
+        display: block; 
+        margin: 0 auto; 
+        margin-bottom: 10px; 
     }
     main {
         padding: 10px;
     }
-    .produto {
-        width: 45%;
-        margin: 10px;
+    .carrinho {
+        width: 80%; 
+        margin: 10px auto; 
+    }
+    .item-carrinho {
+        width: 80%; 
+        margin: 10px auto;
     }
 }
+
